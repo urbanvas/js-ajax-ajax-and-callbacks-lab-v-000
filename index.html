@@ -19,12 +19,18 @@
     </style>
   </head>
   <body>
+    <form onsubmit="searchRepositories();return false;">
+      <input type="text" id="searchTerms">
+      <input type="submit">
+    </form>
+    <a href="#" onclick="searchRepositories();return false;">Search</a>
     <main id="main">
       <div id="errors"></div>
     </main>
     <div class="flexbox-container">
       <div>
         <h3>Repositories</h3>
+
         <div id="results"></div>
       </div>
       <div>
